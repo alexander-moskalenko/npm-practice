@@ -1,0 +1,39 @@
+npm Tutorial for Beginers 
+https://www.youtube.com/watch?v=6fj0cpmMiVg&list=PLC3y8-rFHvwhgWwm5J3KqzX47n7dwWNrq
+Package manager
+Reusable code => Modules
+Reusable code, Package.json => Package
+Reusable code (Developer A) => npm Registry => Developer B
+node -v
+npm -v
+npm help
+npm <cmd> -h //quick help on <cmd>
+npm search-help update //search in help for update
+Package.json - Manage dependencies and its versions; - Scripts (initial build)
+npm init
+npm init --yes 
+npm config set init-author-name
+npm set init-license
+npm config get init-author-name
+npm get init-license
+npm config delete init-license
+npm install <packege name>
+npm install <package name> --save //save dependencies in package.json
+npm install <package name> --save-dev //create development dependencies
+npm uninstall <package name> --save
+npm uninstall <package name> --save-dev
+npm install <package name> -g //install globally
+npm uninstall <package name> -g //uninstall globally
+npm list
+npm list --depth 1
+npm list --global true --depth 0 //list of packages installed globally
+npm install <package name>@3.3.0
+npm install npm@latest -g //run as administrator
+package.json - dependencies - "<package name>": "*" //update to the latest
+npm update <package name> --save
+npm update --dev --save-dev
+npm update -g <package name>
+npm list --depth 0 //extraneous 
+npm prune //remove extraneous
+
+Shorthands and Other CLI Niceties - docs.npmjs.com/misc/config
