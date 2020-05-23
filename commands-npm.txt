@@ -1,3 +1,76 @@
+Package - это директория с одним или несколькими модулями и файлом package.json
+Package manager - это инструмент, позволяющий управлять процессом установки, настройки и обновления пакетов
+npm - node package manager, единый стандарт для серверного и клиентского javascript
+package.json - это файл манифест, который содержит мета-данные.
+dependencies - это зависимости, т.е. прочие пакеты, без которых не будет работать пакет
+devDependencies - необходимы разработчику, например пакеты сборки
+Экономит время
+Поддерживает большие проекты
+Для работы с GitHub
+
+npm install npm@latest -g
+npm help - справка
+npm install -h - помощь по конкретной команде
+npm help npm
+npm help -l
+
+npm search jquery
+
+npm ls -g --depth=0
+
+ls C:\Users\Admin\AppData\Roaming\npm
+
+npm i -g http-server
+http-server
+
+Локальная установка предпочтительнее, обусловлено тем, что на компьютере могут быть разные проекты, зависящие от разных версий одних и тех же npm пакетов
+Глобально установленный пакет может войти в конфликт с прочими пакетами установленными локально
+
+npm i normalize.css bootstrap
+
+npm uninstall <package-name>
+
+rm -rf node_modules
+
+cat .gitignore
+
+npm init
+
+npm outdated
+semver.org/lang/ru
+npm update - апдейт до Wanted версии
+
+npm install gulp -D
+
+mkdir dist src && touch dist/index.html
+mv index.js src
+npm install -D webpack@latest webpack-cli
+npx webpack
+
+npm-скрипты позволяют удобно запускать:
+тестирование приложения, сборку приложения на продакшен, локальный сервер для разработки, любые зависимости, вашего приложения с различными опциями
+
+start - как нужно запускать приложение
+test
+
+npm start npm test
+npm run 
+
+touch src/scss/main.scss
+
+npm i node-sass -D
+scss: "node-sass --output-style compressed -o dist/css src/scss"
+node-sass установлен локально, так что вызывать его мы можем либо при помощи npx, либо при помощи node-скриптов
+npm run scss
+
+build: "webpack --output dist/bundle.js"
+npm run build
+
+echo node_modules > .gitignore
+
+
+
+
 npm Tutorial for Beginers 
 https://www.youtube.com/watch?v=6fj0cpmMiVg&list=PLC3y8-rFHvwhgWwm5J3KqzX47n7dwWNrq
 Package manager
