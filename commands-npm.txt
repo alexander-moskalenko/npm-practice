@@ -1,3 +1,4 @@
+# ЧТО ТАКОЕ npm
 Package - это директория с одним или несколькими модулями и файлом package.json
 Package manager - это инструмент, позволяющий управлять процессом установки, настройки и обновления пакетов
 npm - node package manager, единый стандарт для серверного и клиентского javascript
@@ -8,18 +9,24 @@ devDependencies - необходимы разработчику, наприме�
 Поддерживает большие проекты
 Для работы с GitHub
 
+# УСТАНОВКА И ОБНОВЛЕНИЕ npm
 npm install npm@latest -g
 npm help - справка
 npm install -h - помощь по конкретной команде
+
+# СПРАВКА ПО РАБОТЕ С npm
 npm help npm
 npm help -l
 
+# ПОИСК И УСТАНОВКА ПАКЕТОВ
 npm search jquery
 
+# ЗАВИСИМОСТИ ПАКЕТА
 npm ls -g --depth=0
 
 ls C:\Users\Admin\AppData\Roaming\npm
 
+# ПОИСК И УСТАНОВКА ПАКЕТОВ
 npm i -g http-server
 http-server
 
@@ -68,10 +75,12 @@ npm run build
 
 echo node_modules > .gitignore
 
+git clone https://github.com/alexander-moskalenko/npm-practice.git npm-practice-test
+cd !$ or npm-practice-test
 
+===========
 
-
-npm Tutorial for Beginers 
+# Tutorial for Beginers npm 
 https://www.youtube.com/watch?v=6fj0cpmMiVg&list=PLC3y8-rFHvwhgWwm5J3KqzX47n7dwWNrq
 Package manager
 Reusable code => Modules
